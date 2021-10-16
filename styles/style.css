@@ -149,8 +149,8 @@ a {
 
 #hero {
   height: 80vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(226, 226, 226, 0.9))), url(../img/hidrog1.jfif);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(226, 226, 226, 0.9)), url(../img/hidrog1.jfif);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(226, 226, 226, 0.9))), url(../img/amazonia.jpg);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(226, 226, 226, 0.9)), url(../img/amazonia.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
