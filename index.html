@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/DIN 30640 Std Neuzeit Grotesk Light.otf">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vivify.min.css">
 </head>
 
 <body>
@@ -18,8 +19,8 @@
         <header>
             <nav id="navbar" class="navbar">
 
-                <a href="#top" class="logo-container"">
-                    <img src=" img/logot1.png" alt="Logotipo da GeoFutura">
+                <a href="#top" class="logo-container">
+                    <img src="img/logot1.png" alt="Logotipo da GeoFutura">
                     <span>GeoFutura</span>
                 </a>
 
@@ -41,7 +42,7 @@
             <div id="hero">
                 <div class="hero-content-container">
                     <div class="hero-logo-container">
-                        <img src="img/logot1.png" alt="Logo GeoFutura">
+                        <img class="main-logo" src="img/logot1.png" alt="Logo GeoFutura">
                     </div>
                     <div class="hero-name-container">
                         <h1>GeoFutura</h1>
@@ -58,6 +59,111 @@
                 </div>
 
             </div>
+
+
+
+
+
+
+
+            <section id="services">
+
+
+                <h2>Nossos Serviços</h2>
+
+
+
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img data-scroll="" src="img/geologia_mineracao.png" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Geologia e Mineração</h3>
+                    </div>
+                    <div class="service-descrip">
+                        <ul>
+                            <li>Análise de Estabilidade de Taludes</li>
+                            <li>Topografia de Minas</li>
+                            <li>Laudos Geológicos</li>
+                            <li>Mapeamento Geológico</li>
+                            <li>Relatórios de Pesquisa</li>
+                            <li>Análises Petrográficas</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="service-card">
+                    <div class="service-img-container ">
+                        <img src="img/meio_ambiente.png" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Meio Ambiente</h3>
+                    </div>
+                    <div class="service-descrip">
+                        <ul>
+                            <li>Análise de Risco Ambiental</li>
+                            <li>Mapeamentos Temáticos</li>
+                            <li>Avaliação de Áreas de Risco</li>
+                            <li>Perícia Ambiental</li>
+                            <li>Avaliação de Impacto Ambiental</li>
+                            <li>Plano de Recuperação de Áreas Degradadas (PRAD)</li>
+                            <li>Parcelamento do Solo</li>
+                            <li>Licenciamento Ambiental (Licença Prévia, Licença de Instalação e Licença de Operação)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="img/geoprocessamento.png" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Geoprocessamento</h3>
+                    </div>
+                    <div class="service-descrip">
+                        <ul>
+                            <li>Aerofotointerpretação</li>
+                            <li>Fotointerpretação</li>
+                            <li>Georreferenciamento</li>
+                            <li>Análise e Processamento de Dados Espaciais</li>
+                            <li>Sensoriamento Remoto</li>
+                            <li>Georreferenciamento de Imóveis Rurais (INCRA)</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="img/hidrogeologia.png" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Hidrogeologia</h3>
+                    </div>
+                    <div class="service-descrip">
+                        <ul>
+                            <li>Outorga de Uso de Água Subterrânea</li>
+                            <li>Teste de Bombeamento (NBR 12212)</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
         </main>
 
 
@@ -110,6 +216,12 @@
     </div>
     <script src="scripts/script.js"></script>
     <script src="scripts/navscroll.js"></script>
+    <script src="scripts/scroll-out.js"></script>
+    <script>
+        ScrollOut({
+            targets: 'h3, img'
+        })
+    </script>
 </body>
 
 </html>

@@ -201,6 +201,44 @@ a {
   padding: 1rem;
 }
 
+.service-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-card .service-img-container img {
+  max-width: 150px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.service-card .service-img-container img[data-scroll="in"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.service-card .service-title h3 {
+  font-family: "Neuzeit Grotesk", sans-serif;
+}
+
+.service-card .service-descrip ul {
+  text-align: center;
+  list-style: none;
+}
+
 #footer {
   padding: 2rem 0;
   background: #f9f9f9;
