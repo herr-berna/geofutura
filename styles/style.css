@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Neuzeit Grotesk";
   src: url("../fonts/DIN 30640 Std Neuzeit Grotesk Light.otf");
@@ -84,7 +88,7 @@ li {
 }
 
 .navbar li :hover {
-  background: var(--secondary);
+  color: #ab7766;
 }
 
 .toggle-button {
@@ -149,8 +153,11 @@ a {
 
 #hero {
   height: 80vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(226, 226, 226, 0.9))), url(../img/amazonia.jpg);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(226, 226, 226, 0.9)), url(../img/amazonia.jpg);
+  background: url(../img/rock-formation.jpg);
+  background-size: 1920px;
+  background-repeat: no-repeat;
+  background-position-y: -300px;
+  background-position-x: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,14 +208,19 @@ a {
   padding: 1rem;
 }
 
+#services {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.5))), url(../img/white-sand.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url(../img/white-sand.jpg);
+}
+
 .section-title-container {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .section-title-container h2 {
   color: #9966aa;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: .4rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -216,7 +228,29 @@ a {
   margin: 0 auto;
 }
 
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service-link:link,
+.service-link:visited {
+  color: #9966aa;
+  font-size: 1.1rem;
+}
+
 .service-card {
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,9 +266,11 @@ a {
           align-items: center;
   padding: 1rem 2rem;
   background: #fbf7f5;
-  margin: 0 .5rem 2rem;
+  margin: 2rem 2rem;
   border-radius: 4px;
   border: 1px solid #f1f1f1;
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(226, 226, 226, 0.7);
+          box-shadow: 2px 4px 8px 3px rgba(226, 226, 226, 0.7);
 }
 
 .service-card .service-img-container {
@@ -256,8 +292,9 @@ a {
 
 .service-card .service-title h3 {
   font-family: "Neuzeit Grotesk", sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .service-card .service-title h3[data-scroll] {
@@ -281,6 +318,57 @@ a {
 .service-card .service-descrip ul li {
   font-size: 1.3rem;
   padding: .4rem 0;
+}
+
+.presentation-cards-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation-card {
+  background: #eAf5f6;
+  width: 350px;
+  margin: 2rem 0;
+  padding: .5rem .7rem;
+}
+
+.presentation-info {
+  padding: 0rem 1.3rem;
+}
+
+.presentation-info .presentation-title {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.presentation-info .presentation-descrip p {
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.presentation-info .presentation-socials {
+  margin-top: 1rem;
+}
+
+.presentation-info .presentation-socials i {
+  font-size: 1.7rem;
+  margin: 1rem;
+  color: #9966aa;
 }
 
 #footer {
@@ -380,6 +468,80 @@ a {
   margin-right: 1rem;
 }
 
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/rock2.jpg);
+}
+
+.main-info-container {
+  -webkit-box-shadow: 1px 2px 8px 4px rgba(226, 226, 226, 0.7);
+          box-shadow: 1px 2px 8px 4px rgba(226, 226, 226, 0.7);
+  height: 70%;
+  width: 90%;
+  padding-top: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9)));
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+}
+
+.main-info-container h1 {
+  text-align: center;
+  color: #ab7766;
+}
+
+.main-info-container ul {
+  list-style: none;
+  text-align: center;
+}
+
+.main-info-container ul li {
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-links {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.main-links a {
+  display: block;
+  width: 160px;
+  padding: .7rem .3rem;
+  border-radius: 5px;
+  margin: .5rem auto;
+}
+
+.main-links a[href="index.html#contact"] {
+  background: #77aa66;
+  color: #fff;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.main-links a[href="index.html#contact"]:hover {
+  background: #ab7766;
+}
+
+.main-links a[href="index.html"] {
+  color: #9966aa;
+}
+
 @media (min-width: 320px) {
   .toggle-button {
     display: -webkit-box;
@@ -448,6 +610,32 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .services-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .presentation-cards-container {
+    padding: 0 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #footer .footer-container .row {
     -webkit-box-orient: horizontal;
