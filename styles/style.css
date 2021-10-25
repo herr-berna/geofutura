@@ -188,7 +188,7 @@ a {
 
 #hero .hero-name-container .subtitle {
   color: #9966aa;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   display: block;
   margin: .45rem auto;
@@ -199,6 +199,21 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem;
+}
+
+.section-title-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.section-title-container h2 {
+  color: #9966aa;
+  font-size: 2rem;
+  padding-bottom: .4rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .service-card {
@@ -215,6 +230,15 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem 2rem;
+  background: #fbf7f5;
+  margin: 0 .5rem 2rem;
+  border-radius: 4px;
+  border: 1px solid #f1f1f1;
+}
+
+.service-card .service-img-container {
+  padding: .7rem;
 }
 
 .service-card .service-img-container img {
@@ -232,11 +256,31 @@ a {
 
 .service-card .service-title h3 {
   font-family: "Neuzeit Grotesk", sans-serif;
+  font-size: 1.45rem;
+  margin-bottom: 1rem;
+}
+
+.service-card .service-title h3[data-scroll] {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.service-card .service-title h3[data-scroll="in"] {
+  opacity: 1;
+}
+
+.service-card .service-title h3[data-scroll="out"] {
+  opacity: 0;
 }
 
 .service-card .service-descrip ul {
   text-align: center;
   list-style: none;
+}
+
+.service-card .service-descrip ul li {
+  font-size: 1.3rem;
+  padding: .4rem 0;
 }
 
 #footer {
