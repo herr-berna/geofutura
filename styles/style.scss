@@ -123,8 +123,9 @@ a {
 }
 
 .btn {
-    padding: .55rem .65rem;
+    padding: 5px;
     background: #FFF;
+    display: block;
     border: 1px solid $fuchsia;
     color: $fuchsia;
     border-radius: 5px;
@@ -132,6 +133,7 @@ a {
     transition: box-shadow 300ms ease-in-out;
     margin: .75rem;
     font-weight: bold;
+    font-size: 1rem
 }
 
 .btn:hover {
