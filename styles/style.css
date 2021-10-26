@@ -143,6 +143,10 @@ a {
           box-shadow: none;
 }
 
+.whats {
+  background: #25d366;
+}
+
 .bg-1 {
   background-color: #77aa66;
 }
@@ -290,6 +294,10 @@ a {
           transform: scale(1);
 }
 
+.service-card .service-link:hover {
+  color: #77aa66;
+}
+
 .service-card .service-title h3 {
   font-family: "Neuzeit Grotesk", sans-serif;
   font-size: 1.3rem;
@@ -320,11 +328,18 @@ a {
   padding: .4rem 0;
 }
 
+#about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.7))), url(../img/amazonia.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(../img/amazonia.jpg);
+}
+
 .presentation-cards-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -341,8 +356,9 @@ a {
 .presentation-card {
   background: #eAf5f6;
   width: 350px;
+  height: 900px;
   margin: 2rem 0;
-  padding: .5rem .7rem;
+  border-radius: 5px;
 }
 
 .presentation-info {
@@ -369,6 +385,15 @@ a {
   font-size: 1.7rem;
   margin: 1rem;
   color: #9966aa;
+}
+
+.presentation-picture {
+  padding: 1rem;
+}
+
+.presentation-picture img {
+  max-width: 300px;
+  border-radius: 50%;
 }
 
 #footer {
@@ -466,6 +491,19 @@ a {
   color: #9966aa;
   font-size: 1.5rem;
   margin-right: 1rem;
+}
+
+#contact {
+  height: 60vh;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .main-container {
@@ -629,9 +667,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;

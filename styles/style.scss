@@ -136,6 +136,10 @@ a {
     box-shadow: none;
 }
 
+.whats {
+    background: #25d366;
+}
+
 .bg-1 {
     background-color: $green;
 }
@@ -262,6 +266,12 @@ a {
         img[data-scroll="in"] {
             transform: scale(1);
         }
+
+
+    }
+
+    .service-link:hover {
+        color: $green;
     }
 
     .service-title {
@@ -302,10 +312,14 @@ a {
 
 //about
 
+#about {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(../img/amazonia.jpg)
+}
 
 .presentation-cards-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -315,8 +329,10 @@ a {
 .presentation-card {
     background: #eAf5f6;
     width: 350px;
+    height: 900px;
     margin: 2rem 0;
-    padding: .5rem .7rem;
+    border-radius: 5px;
+    // padding: .5rem .7rem;
 }
 
 .presentation-info {
@@ -344,6 +360,15 @@ a {
             margin: 1rem;
             color: $fuchsia;
         }
+    }
+}
+
+.presentation-picture {
+    padding: 1rem;
+
+    img {
+        max-width: 300px;
+        border-radius: 50%;
     }
 }
 
@@ -434,6 +459,23 @@ a {
         }
     }
 }
+
+//contact
+
+#contact {
+    height: 60vh;
+}
+
+.contact-content {
+    text-align: center;
+
+    p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
 
 
 //pages serviços
@@ -573,12 +615,10 @@ a {
     .presentation-cards-container {
         padding: 0 3rem;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         text-align: center;
         align-items: center;
     }
-
-
 
 
 
