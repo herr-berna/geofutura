@@ -126,16 +126,18 @@ a {
 
 .btn {
   padding: .55rem .65rem;
-  background: #9966aa;
-  color: #FFF;
+  background: #FFF;
+  border: 1px solid #9966aa;
+  color: #9966aa;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 3px #5a5a5a;
-          box-shadow: 2px 2px 3px #5a5a5a;
+  -webkit-box-shadow: 2px 2px 3px #ccc;
+          box-shadow: 2px 2px 3px #ccc;
   -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
   transition: -webkit-box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
   margin: .75rem;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -145,19 +147,28 @@ a {
 
 .whats {
   background: #25d366;
+  color: #FFF;
+  border-color: #25a366;
+}
+
+.whats:hover {
+  background: #25a366;
 }
 
 .bg-1 {
-  background-color: #77aa66;
+  border-color: #77aa66;
+  color: #77aa66;
 }
 
 .bg-2 {
-  background-color: #6699aa;
+  border-color: #6699aa;
+  color: #6699aa;
 }
 
 #hero {
   height: 80vh;
   background: url(../img/rock-formation.jpg);
+  background-attachment: fixed;
   background-size: 1920px;
   background-repeat: no-repeat;
   background-position-y: -300px;
@@ -331,6 +342,7 @@ a {
 #about {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.7))), url(../img/amazonia.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url(../img/amazonia.jpg);
+  background-attachment: fixed;
 }
 
 .presentation-cards-container {
@@ -502,8 +514,31 @@ a {
 }
 
 .contact-content p {
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+}
+
+.contact-content a {
+  display: block;
+  width: 300px;
+  margin: 1.4rem auto;
   font-size: 1.4rem;
-  margin-bottom: 2rem;
+}
+
+#meio-ambiente {
+  background: url(../img/amazonia.jpg);
+}
+
+#geomi {
+  background: url(../img/LEAD.jpg);
+}
+
+#geoproc {
+  background: url(../img/geoproc2.jpg);
+}
+
+#hidrog {
+  background: url(../img/hidrog2.jpeg);
 }
 
 .main-container {
@@ -523,7 +558,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../img/rock2.jpg);
+  background-attachment: fixed;
 }
 
 .main-info-container {
