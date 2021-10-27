@@ -169,7 +169,7 @@ a {
 
 #hero {
   height: 80vh;
-  background: url(../img/rock-formation.jpg);
+  background: url(../img/rock-formation.webp);
   background-attachment: fixed;
   background-size: 1920px;
   background-repeat: no-repeat;
@@ -536,7 +536,7 @@ a {
 }
 
 #hidrog {
-  background: url(../img/hidrog2.jpeg);
+  background: url(../img/hidrog2.webp);
 }
 
 .main-container {
